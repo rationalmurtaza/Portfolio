@@ -29,8 +29,12 @@ $(window).on("load", function() {
 			once: true,
 			mobile: true
 		});
-
 	});
+	/*
+	 * Set Date 
+	*/
+	let date_span = document.querySelector("#current-date")
+	if (date_span) date_span.innerHTML = new Date().getFullYear();
 });
 
 $(function() {
