@@ -16,6 +16,7 @@ let images = [
     "assets/images/profile/hero-image-1.jpg",
     "assets/images/profile/hero-image-2.jpg",
     "assets/images/profile/hero-image-3.jpg",
+	"assets/images/profile/hero-image-4.jpg",
 ]
 
 const checkCount = () => {
