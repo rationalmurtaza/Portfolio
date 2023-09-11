@@ -145,9 +145,7 @@
 
       				<!-- titles -->
       				<div class="h-titles">
-      					<h1 class="h-title scrolla-element-anim-1 scroll-animate" data-animate="active">Pupil Distance Calculator - Precision Defined
-
-                          </h1>
+      					<h1 class="h-title scrolla-element-anim-1 scroll-animate" data-animate="active">Pupils Mosaic - Seamless Image Stitching Tool</h1>
       				</div>
 
       			</div>
@@ -166,11 +164,11 @@
               <div class="m-details">
                 <div class="details-label">
                   <span>Year</span>
-                  <strong>2021</strong>
+                  <strong>2022</strong>
                 </div>
                 <div class="details-label">
                   <span>Technology</span>
-                  <strong>JavaScript<br/>MediaPipe Facemesh API</strong>
+                  <strong>Python<br> OpenCV</strong>
                 </div>
               </div>
 
@@ -187,9 +185,16 @@
                     <div class="p-title scrolla-element-anim-1 scroll-animate" data-animate="active">About</div>
                     <div class="text scrolla-element-anim-1 scroll-animate" data-animate="active">
                         <div>
-                            <p class="text-justify">The Pupil Distance Calculator is an innovative standalone application that combines state-of-the-art technology with intelligent algorithms to measure the distance between the pupils of both eyes with unmatched accuracy. Unlike traditional solutions, this tool eliminates the need for physical calibration using items like credit cards, opting instead to utilize the iris as a standard ratio for pupillary distance measurement.</p>
-                            <p class="text-justify">With an impressive 97% accuracy rate and an error margin limited to a minuscule 1mm, the application rapidly delivers comprehensive measurement results, offering values for total pupillary distance as well as individual left and right distances.</p>
-                            <p class="text-justify">The application is a testimony to my abilities to leverage advanced technologies like JavaScript, Tensorflow.js(WebGL), Google's MediaPipe library, and complex algorithms such as Knn and Most Occurrence Algorithm to solve real-world problems effectively.</p>
+                            <p class="text-justify">As a part of a remarkable initiative, I spearheaded the development of Pupils Mosaic, a proficient image processing tool. The objective was to create seamless panoramic mosaics from overlapping eye pupil images. This is crucial in the medical field as these composite images provide a more comprehensive view to physicians for accurate diagnosis. The tool leverages Python and exploits the OpenCV library to facilitate the process of image stitching.</p>
+                            <p class="text-justify">The procedure of creating mosaics involves several vital steps:</p>
+                            <ul>
+                                <li>Loading and identifying features in the images using the SIFT (Scale-Invariant Feature Transform) feature detector.</li>
+                                <li>Matching the detected features between the images with the FLANN (Fast Library for Approximate Nearest Neighbors) matcher.</li>
+                                <li>Estimating the homography matrices between the images using the RANSAC (Random Sample Consensus) algorithm for accurate image alignment.</li>
+                                <li>Warping the images to align them to a common coordinate system using the estimated homography matrices.</li>
+                                <li>Blending the warped images together using a weighted average method to produce a seamless panoramic image or mosaic.</li>
+                            </ul>
+                            <p class="text-justify">With Pupils Mosaic, users have an intuitive interface that allows them to select input images, adjust parameters, and display the resulting mosaic. It is a powerful tool that provides high-quality panoramas and significantly enhances image processing efficiency.</p>
                             <div>
                             <h4><strong>Key Achievements</strong>:</h4>
                             <ul>
@@ -201,17 +206,12 @@
                                         padding: 10px;
                                     }
                                 </style>
-                                <li>Devised an efficient technique for calculating the facial distance from the camera, improving the accuracy of pupillary distance measurement.</li>
-                                <li>Implemented an intelligent logic to check for sufficient lighting, thereby ensuring optimal camera capture quality for precise measurements.</li>
-                                <li>Introduced marker-based segmentation methods using the canvas API in JavaScript, contributing to the application's accuracy.</li>
-                                <li>Developed and integrated the Knn and Most Occurrence Algorithm to identify the most accurate result consistently.</li>
-                                <li>Utilized the unique attribute of the pupil's Iris as a constant to calculate pupillary distance, innovating a new approach in the realm of optometric measurements.</li>
+                                <li>Directed the development of Pupils Mosaic, an advanced image processing tool creating seamless panoramic images from overlapping eye pupil images, significantly aiding physicians in accurate diagnoses.</li>
+                                <li>Utilized crucial algorithms including SIFT for feature detection, FLANN for feature matching, and RANSAC for estimating homography matrices, ensuring precise image alignment.</li>
+                                <li>Successfully created a tool that provides a user-friendly interface for selecting input images, adjusting parameters, and showcasing the output mosaic.</li>
                             </ul>
                         </div>
-                        <div>
-                            <em>With the Pupil Distance Calculator, I've demonstrated the capacity to create efficient and reliable solutions that leverage modern technology to enhance everyday life.</em>
-                        </div>
-                        <p><strong>Particulars</strong>: <em>Linux (Ubuntu)</em>, <em>JavaScript</em>, <em>TensorflowJS</em>, <em>MediaPipe Facemesh API</em>, <em>CSS</em>, <em>HTML5</em>, <em>GIT</em>.</p>
+                        <p><strong>Particulars</strong>: <em>Linux (Ubuntu)</em>, <em>Python</em>, <em>OpenCV Library</em>.</p>
                     </div>
       			</div>
       		</div>
@@ -224,12 +224,12 @@
           <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
               <div class="h-titles h-navs">
-                <a href="fitting-height.html">
+                <a href="g-s-a.html">
                   <span class="nav-arrow scrolla-element-anim-1 scroll-animate" data-animate="active">
                     Next Project
                   </span>
                   <span class="h-title splitting-text-anim-2 scroll-animate" data-splitting="chars" data-animate="active">
-                    Fitting Height Calculator - Revolutionizing Eyewear Fitting
+                    Guided Sales Experience
                   </span>
                 </a>
               </div>
@@ -298,4 +298,4 @@
     <script src="../assets/js/common.js"></script>
     
     </body>
-</html> 
+</html>

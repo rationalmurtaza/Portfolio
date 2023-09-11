@@ -1,12 +1,50 @@
 /**
 *	Portfolio - Murtaza Lightwala
 *	Author: Murtaza
-*	Author URL: 
+*	Author URL: https://murtafiji.com/
 *	Copyright © Murtaza. All Rights Reserved.
 **/
 
 ( function( $ ) {
 	'use strict';
+
+/**
+ * Hero Image transition
+ */
+let count = 1;
+let images = [
+    "assets/images/profile/hero-image-1.jpg",
+    "assets/images/profile/hero-image-2.jpg",
+    "assets/images/profile/hero-image-3.jpg",
+]
+
+const checkCount = () => {
+	if (count >= images.length) {
+		count = 0;
+	}
+}
+
+setInterval(function(){
+    count = count % images.length;
+    let heroImage = document.getElementById('hero-image');
+    
+    // Apply the transition effect by adding a CSS class
+    heroImage.classList.add("image-transition");
+    heroImage.classList.remove("image-transition-main");
+  
+    // Wait for the transition to finish before changing the image source
+    setTimeout(function() {
+		checkCount();
+		heroImage.src = images[count];
+        // Remove the CSS class to reset the transition effect
+        heroImage.classList.remove("image-transition");
+        heroImage.classList.add("image-transition-main");
+		
+		count++;
+    }, 1000);
+  
+}, 5000);
+
 
 /**
 	Preloader
@@ -469,5 +507,6 @@ function setHeightFullSection() {
 	/* Set full height in started blocks */
 	$('.error-page, .menu-full-overlay, .preloader .centrize').css({'height': height});
 }
+
 
 } )( jQuery );

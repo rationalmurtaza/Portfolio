@@ -5564,3 +5564,16 @@ body.light-skin .wc-block-product-search .wc-block-product-search__button {
 body.light-skin.single-portfolio .m-titles:before {
 	background: #f7f5f2;
 }
+.image-transition {
+	transition: 1.2s linear;
+    border-radius: 0px !important;
+	transform: scale(.7);
+	filter: grayscale(100%);
+	/* opacity: .5; */
+}
+
+.image-transition-main {
+	transition: 1.5s linear;
+	transform: scale(1);
+	filter: grayscale(0%);
+}
