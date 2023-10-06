@@ -12,10 +12,17 @@
  * Hero Image transition
  */
 let count = 1;
-let images = [
-    "assets/images/profile/hero-image-1.jpg",
-    "assets/images/profile/hero-image-2.jpg",
-    "assets/images/profile/hero-image-3.jpg"
+const location = 'assets/images/profile/';
+const images = [
+    location + 'hero-image-1.webp',
+    location + 'hero-image-2.webp',
+    location + 'hero-image-3.webp',
+    location + 'hero-image-4.webp',
+    location + 'hero-image-5.webp',
+    location + 'hero-image-6.webp',
+    location + 'hero-image-7.webp',
+    location + 'hero-image-8.webp',
+    location + 'hero-image-9.webp',
 ]
 
 const checkCount = () => {
